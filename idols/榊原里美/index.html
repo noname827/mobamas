@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta id="mobage-connect-app-csrf-token" name="mobage-connect-app-csrf-token" content="eyJhbGciOiJIUzI1NiJ9.eyJub25jZSI6IjE1ZjQ0MjQyZjk2ZDdmZGRjN2ZiODExYjZlM2Q4MmQyNWVlYmJmMzkiLCJpYXQiOjE2ODAxNDE2NjQsIl9leHQiOnsicCI6e30sImEiOiJsb2dpbl9mb3JtIn0sInN1YiI6IjAiLCJpc3MiOiJodHRwczovL2Nvbm5lY3QubW9iYWdlLmpwIiwidHlwIjoiY3NyZl90b2tlbiJ9.JOw2J0LN5QyY4OCBMu_CYfR28Piqr1XUArBhKmCBVYw">
+  <meta id="mobage-connect-app-environment" name="mobage-connect-app-environment" content="prod-service">
+  <meta id="mobage-connect-app-action-id" name="mobage-connect-app-action-id" content="login_form">
+  <meta id="mobage-connect-app-user-id" name="mobage-connect-app-user-id" content="0">
+  <meta id="mobage-connect-app-tracking-cookie" name="mobage-connect-app-tracking-cookie" content="e000841ca987bc6f3a362016e203500a63e52132">
+  <meta id="mobage-connect-app-responded-at" name="mobage-connect-app-responded-at" content="1680141664">
+  <meta id="mobage-connect-app-client-origin-uri" name="mobage-connect-app-client-origin-uri" content="">
+  <title>Mobage Connect</title>
+  <script src="https://cdn-connect.mobage.jp/static/js/sp/build/connect.min.js?202208160718"></script>
+  <link rel="stylesheet" href="https://cdn-connect.mobage.jp/static/css/sp/default.min.css?202208160718">
+
+  <link rel="shortcut icon" href="https://cdn-connect.mobage.jp/static/img/favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="icon" href="https://cdn-connect.mobage.jp/static/img/favicon.ico" type="image/vnd.microsoft.icon" />
+</head>
+<body>
+<div class="ui-container content-container-l loginPage">
+<noscript><p class="txt-alert m-t-m">JavaScriptを有効にしてください。</p></noscript>
+
+<div id="mobage-connect-analytics"
+     data-analyticsEndpoint="https://event-api.analytics.mbga.jp/nbpf"
+     data-sdkName=""
+     data-sdkVersion=""
+     data-appId="portal"
+     data-userId="0"
+     data-trackingCookie="e000841ca987bc6f3a362016e203500a63e52132"
+     data-isInstalled="0"
+     />
+
+
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+
+<div class="or-content-container">
+  <header class="header-b box-pack-e" role="banner">
+    <h1 class="header-logo-s">
+      <img src="https://cdn-connect.mobage.jp/static/img/theme/default/logo.png" class="w-max" alt="mobage by DeNA">
+    </h1>
+  </header>
+  <div class="contents-body" role="main">
+    <div class="landscapeColumnLayout">
+      <div class="landscapeColumnLayout_left">
+        <form id="mobage-connect-login-form" action="/login" method="post" data-csrf="1" data-should-federate-mobage="0">
+          <input type="hidden" name="login_history_id" value="2953288447">
+          <input type="hidden" name="post_login_redirect_uri" value="https://connect.mobage.jp/connect/1.0/services/authorize?response_type=code&amp;client_id=portal-4&amp;scope=openid&amp;redirect_uri=https%3A%2F%2Fssl.sp.mbga.jp%2F_connect_login_callback&amp;state=3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664&amp;display=touch&amp;prompt=consent">
+          <input type="hidden" name="post_cancel_redirect_uri" value="https://connect.mobage.jp/login?display=touch&amp;sig=8bf73aab5f7fb42983ec740d72a00314d486059c&amp;seed=SYaeHbRFFsGD&amp;iat=1680141664&amp;client_id=portal-4&amp;post_login_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Fconnect%2F1.0%2Fservices%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dportal-4%26scope%3Dopenid%26redirect_uri%3Dhttps%253A%252F%252Fssl.sp.mbga.jp%252F_connect_login_callback%26state%3D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%26display%3Dtouch%26prompt%3Dconsent"><input type="hidden" name="client_id" value="portal-4">
+          <input type="hidden" name="theme" value="default"><input type="hidden" name="display" value="touch">
+          <input type="hidden" name="width" value="auto">
+          <input type="hidden" name="height" value="auto"><input type="hidden" name="enable_federation" value="1">
+
+      		<h1 class="loginPage_heading">モバゲーアカウントでログイン</h1>
+          <div class="login-layout-fieldset-col-input of-hidden">
+            <input type="email" id="subject-id" name="subject_id" autocomplete="on" placeholder="メールアドレス" class="txtfield" value="" >
+          </div>
+          <div class="login-layout-fieldset-col-input of-hidden">
+              <input type="password" id="subject-password" name="subject_password" value="" placeholder="パスワード" class="txtfield" pattern="^[A-Za-z0-9-_.@/]{4,20}$">
+          </div>
+          <div class="m-t-grid">
+            
+            <button class="g-recaptcha btn-positive w-max" id="login" name="login" value="login" data-sitekey="6LefkSMUAAAAAJ6sw7z9hTdYeHfiPJ-uagKrL-bl" data-callback="onRecaptchaChecked">
+            
+              <span class="btn-positive-inner btn-positive-txt">
+                ログイン
+              </span>
+            </button>
+          </div>
+          <div class="m-t-xl align-c">
+            <p class="txt-notes txt-s">パスワードを忘れた方は<a href="https://connect.mobage.jp/password/reminders/new" class="txt-link2" target="_blank">こちら</a></p>
+          </div>
+          <div class="align-c m-t-grid">
+            <button id="cancel" name="cancel" value="cancel" class="txt-link2 txt-s" formnovalidate>ログインをキャンセルする</button>
+          </div>
+        </form>
+      </div>
+      <!-- / landscapeColumnLayout_left -->
+      
+        <div class="landscapeColumnLayout_right">
+            
+                    
+  <section>
+
+    <div class="m-b-grid"><h1 class="txt-bold">その他の方法でログイン/登録</h1></div>
+    
+    <div class="m-t-m">
+      
+      
+      <a href="/federate/apple?client_id=portal-4&amp;post_cancel_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Flogin%3Fdisplay%3Dtouch%26sig%3D8bf73aab5f7fb42983ec740d72a00314d486059c%26seed%3DSYaeHbRFFsGD%26iat%3D1680141664%26client_id%3Dportal-4%26post_login_redirect_uri%3Dhttps%253A%252F%252Fconnect.mobage.jp%252Fconnect%252F1.0%252Fservices%252Fauthorize%253Fresponse_type%253Dcode%2526client_id%253Dportal-4%2526scope%253Dopenid%2526redirect_uri%253Dhttps%25253A%25252F%25252Fssl.sp.mbga.jp%25252F_connect_login_callback%2526state%253D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%2526display%253Dtouch%2526prompt%253Dconsent&amp;csrf_token=eyJhbGciOiJIUzI1NiJ9.eyJfZXh0Ijp7InAiOnsicG9zdF9mZWRlcmF0ZV9yZWRpcmVjdF91cmkiOiJodHRwczovL2Nvbm5lY3QubW9iYWdlLmpwL2Nvbm5lY3QvMS4wL3NlcnZpY2VzL2F1dGhvcml6ZT9yZXNwb25zZV90eXBlPWNvZGUmY2xpZW50X2lkPXBvcnRhbC00JnNjb3BlPW9wZW5pZCZyZWRpcmVjdF91cmk9aHR0cHMlM0ElMkYlMkZzc2wuc3AubWJnYS5qcCUyRl9jb25uZWN0X2xvZ2luX2NhbGxiYWNrJnN0YXRlPTMwMDk4Mjk3NDIuZU1HbVVXN1lXekVmZWJpcUtPcUZTRkF1LjE2ODAxNDE2NjQmZGlzcGxheT10b3VjaCZwcm9tcHQ9Y29uc2VudCIsInBvc3RfY2FuY2VsX3JlZGlyZWN0X3VyaSI6Imh0dHBzOi8vY29ubmVjdC5tb2JhZ2UuanAvbG9naW4_ZGlzcGxheT10b3VjaCZzaWc9OGJmNzNhYWI1ZjdmYjQyOTgzZWM3NDBkNzJhMDAzMTRkNDg2MDU5YyZzZWVkPVNZYWVIYlJGRnNHRCZpYXQ9MTY4MDE0MTY2NCZjbGllbnRfaWQ9cG9ydGFsLTQmcG9zdF9sb2dpbl9yZWRpcmVjdF91cmk9aHR0cHMlM0ElMkYlMkZjb25uZWN0Lm1vYmFnZS5qcCUyRmNvbm5lY3QlMkYxLjAlMkZzZXJ2aWNlcyUyRmF1dGhvcml6ZSUzRnJlc3BvbnNlX3R5cGUlM0Rjb2RlJTI2Y2xpZW50X2lkJTNEcG9ydGFsLTQlMjZzY29wZSUzRG9wZW5pZCUyNnJlZGlyZWN0X3VyaSUzRGh0dHBzJTI1M0ElMjUyRiUyNTJGc3NsLnNwLm1iZ2EuanAlMjUyRl9jb25uZWN0X2xvZ2luX2NhbGxiYWNrJTI2c3RhdGUlM0QzMDA5ODI5NzQyLmVNR21VVzdZV3pFZmViaXFLT3FGU0ZBdS4xNjgwMTQxNjY0JTI2ZGlzcGxheSUzRHRvdWNoJTI2cHJvbXB0JTNEY29uc2VudCJ9LCJhIjoibG9naW5fZm9ybSJ9LCJzdWIiOiIwIiwiaXNzIjoiaHR0cHM6Ly9jb25uZWN0Lm1vYmFnZS5qcCIsInR5cCI6ImNzcmZfdG9rZW4iLCJub25jZSI6ImU5ODcyNzkwYzk4NWVjOGUwY2NlYmQzNWQ4NjE0NWVlOTE1MjRmZDAiLCJpYXQiOjE2ODAxNDE2NjR9.dRsWVLsGXHFJewSfNLyTmtlaItHqCv35ceodjWOVjOs&amp;post_federate_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Fconnect%2F1.0%2Fservices%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dportal-4%26scope%3Dopenid%26redirect_uri%3Dhttps%253A%252F%252Fssl.sp.mbga.jp%252F_connect_login_callback%26state%3D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%26display%3Dtouch%26prompt%3Dconsent">
+      
+        <div class="btn-apple w-max btn-normal-inner btn-normal-txt">
+          <img class="m-r-xs valign-ns" src="https://cdn-connect.mobage.jp/static/img/common/btn_apple.png" height="38" width="212" alt="Apple">
+        </div>
+      
+      </a>
+      
+    </div>
+    
+
+    
+    <div class="m-t-m">
+      
+      
+      <a href="/federate/twitter?client_id=portal-4&amp;post_cancel_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Flogin%3Fdisplay%3Dtouch%26sig%3D8bf73aab5f7fb42983ec740d72a00314d486059c%26seed%3DSYaeHbRFFsGD%26iat%3D1680141664%26client_id%3Dportal-4%26post_login_redirect_uri%3Dhttps%253A%252F%252Fconnect.mobage.jp%252Fconnect%252F1.0%252Fservices%252Fauthorize%253Fresponse_type%253Dcode%2526client_id%253Dportal-4%2526scope%253Dopenid%2526redirect_uri%253Dhttps%25253A%25252F%25252Fssl.sp.mbga.jp%25252F_connect_login_callback%2526state%253D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%2526display%253Dtouch%2526prompt%253Dconsent&amp;csrf_token=eyJhbGciOiJIUzI1NiJ9.eyJfZXh0Ijp7InAiOnsicG9zdF9mZWRlcmF0ZV9yZWRpcmVjdF91cmkiOiJodHRwczovL2Nvbm5lY3QubW9iYWdlLmpwL2Nvbm5lY3QvMS4wL3NlcnZpY2VzL2F1dGhvcml6ZT9yZXNwb25zZV90eXBlPWNvZGUmY2xpZW50X2lkPXBvcnRhbC00JnNjb3BlPW9wZW5pZCZyZWRpcmVjdF91cmk9aHR0cHMlM0ElMkYlMkZzc2wuc3AubWJnYS5qcCUyRl9jb25uZWN0X2xvZ2luX2NhbGxiYWNrJnN0YXRlPTMwMDk4Mjk3NDIuZU1HbVVXN1lXekVmZWJpcUtPcUZTRkF1LjE2ODAxNDE2NjQmZGlzcGxheT10b3VjaCZwcm9tcHQ9Y29uc2VudCIsInBvc3RfY2FuY2VsX3JlZGlyZWN0X3VyaSI6Imh0dHBzOi8vY29ubmVjdC5tb2JhZ2UuanAvbG9naW4_ZGlzcGxheT10b3VjaCZzaWc9OGJmNzNhYWI1ZjdmYjQyOTgzZWM3NDBkNzJhMDAzMTRkNDg2MDU5YyZzZWVkPVNZYWVIYlJGRnNHRCZpYXQ9MTY4MDE0MTY2NCZjbGllbnRfaWQ9cG9ydGFsLTQmcG9zdF9sb2dpbl9yZWRpcmVjdF91cmk9aHR0cHMlM0ElMkYlMkZjb25uZWN0Lm1vYmFnZS5qcCUyRmNvbm5lY3QlMkYxLjAlMkZzZXJ2aWNlcyUyRmF1dGhvcml6ZSUzRnJlc3BvbnNlX3R5cGUlM0Rjb2RlJTI2Y2xpZW50X2lkJTNEcG9ydGFsLTQlMjZzY29wZSUzRG9wZW5pZCUyNnJlZGlyZWN0X3VyaSUzRGh0dHBzJTI1M0ElMjUyRiUyNTJGc3NsLnNwLm1iZ2EuanAlMjUyRl9jb25uZWN0X2xvZ2luX2NhbGxiYWNrJTI2c3RhdGUlM0QzMDA5ODI5NzQyLmVNR21VVzdZV3pFZmViaXFLT3FGU0ZBdS4xNjgwMTQxNjY0JTI2ZGlzcGxheSUzRHRvdWNoJTI2cHJvbXB0JTNEY29uc2VudCJ9LCJhIjoibG9naW5fZm9ybSJ9LCJzdWIiOiIwIiwiaXNzIjoiaHR0cHM6Ly9jb25uZWN0Lm1vYmFnZS5qcCIsInR5cCI6ImNzcmZfdG9rZW4iLCJub25jZSI6ImU5ODcyNzkwYzk4NWVjOGUwY2NlYmQzNWQ4NjE0NWVlOTE1MjRmZDAiLCJpYXQiOjE2ODAxNDE2NjR9.dRsWVLsGXHFJewSfNLyTmtlaItHqCv35ceodjWOVjOs&amp;post_federate_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Fconnect%2F1.0%2Fservices%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dportal-4%26scope%3Dopenid%26redirect_uri%3Dhttps%253A%252F%252Fssl.sp.mbga.jp%252F_connect_login_callback%26state%3D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%26display%3Dtouch%26prompt%3Dconsent">
+      
+        <div class="btn-twitter w-max btn-normal-inner btn-normal-txt">
+          <img class="m-r-xs valign-ns" src="https://cdn-connect.mobage.jp/static/img/common/btn_twitter.png" height="24" alt="twitter">
+        </div>
+      
+      </a>
+      
+    </div>
+    
+
+    
+    <div class="m-t-m">
+      
+      
+      <a href="/federate/line?client_id=portal-4&amp;post_cancel_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Flogin%3Fdisplay%3Dtouch%26sig%3D8bf73aab5f7fb42983ec740d72a00314d486059c%26seed%3DSYaeHbRFFsGD%26iat%3D1680141664%26client_id%3Dportal-4%26post_login_redirect_uri%3Dhttps%253A%252F%252Fconnect.mobage.jp%252Fconnect%252F1.0%252Fservices%252Fauthorize%253Fresponse_type%253Dcode%2526client_id%253Dportal-4%2526scope%253Dopenid%2526redirect_uri%253Dhttps%25253A%25252F%25252Fssl.sp.mbga.jp%25252F_connect_login_callback%2526state%253D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%2526display%253Dtouch%2526prompt%253Dconsent&amp;csrf_token=eyJhbGciOiJIUzI1NiJ9.eyJfZXh0Ijp7InAiOnsicG9zdF9mZWRlcmF0ZV9yZWRpcmVjdF91cmkiOiJodHRwczovL2Nvbm5lY3QubW9iYWdlLmpwL2Nvbm5lY3QvMS4wL3NlcnZpY2VzL2F1dGhvcml6ZT9yZXNwb25zZV90eXBlPWNvZGUmY2xpZW50X2lkPXBvcnRhbC00JnNjb3BlPW9wZW5pZCZyZWRpcmVjdF91cmk9aHR0cHMlM0ElMkYlMkZzc2wuc3AubWJnYS5qcCUyRl9jb25uZWN0X2xvZ2luX2NhbGxiYWNrJnN0YXRlPTMwMDk4Mjk3NDIuZU1HbVVXN1lXekVmZWJpcUtPcUZTRkF1LjE2ODAxNDE2NjQmZGlzcGxheT10b3VjaCZwcm9tcHQ9Y29uc2VudCIsInBvc3RfY2FuY2VsX3JlZGlyZWN0X3VyaSI6Imh0dHBzOi8vY29ubmVjdC5tb2JhZ2UuanAvbG9naW4_ZGlzcGxheT10b3VjaCZzaWc9OGJmNzNhYWI1ZjdmYjQyOTgzZWM3NDBkNzJhMDAzMTRkNDg2MDU5YyZzZWVkPVNZYWVIYlJGRnNHRCZpYXQ9MTY4MDE0MTY2NCZjbGllbnRfaWQ9cG9ydGFsLTQmcG9zdF9sb2dpbl9yZWRpcmVjdF91cmk9aHR0cHMlM0ElMkYlMkZjb25uZWN0Lm1vYmFnZS5qcCUyRmNvbm5lY3QlMkYxLjAlMkZzZXJ2aWNlcyUyRmF1dGhvcml6ZSUzRnJlc3BvbnNlX3R5cGUlM0Rjb2RlJTI2Y2xpZW50X2lkJTNEcG9ydGFsLTQlMjZzY29wZSUzRG9wZW5pZCUyNnJlZGlyZWN0X3VyaSUzRGh0dHBzJTI1M0ElMjUyRiUyNTJGc3NsLnNwLm1iZ2EuanAlMjUyRl9jb25uZWN0X2xvZ2luX2NhbGxiYWNrJTI2c3RhdGUlM0QzMDA5ODI5NzQyLmVNR21VVzdZV3pFZmViaXFLT3FGU0ZBdS4xNjgwMTQxNjY0JTI2ZGlzcGxheSUzRHRvdWNoJTI2cHJvbXB0JTNEY29uc2VudCJ9LCJhIjoibG9naW5fZm9ybSJ9LCJzdWIiOiIwIiwiaXNzIjoiaHR0cHM6Ly9jb25uZWN0Lm1vYmFnZS5qcCIsInR5cCI6ImNzcmZfdG9rZW4iLCJub25jZSI6ImU5ODcyNzkwYzk4NWVjOGUwY2NlYmQzNWQ4NjE0NWVlOTE1MjRmZDAiLCJpYXQiOjE2ODAxNDE2NjR9.dRsWVLsGXHFJewSfNLyTmtlaItHqCv35ceodjWOVjOs&amp;post_federate_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Fconnect%2F1.0%2Fservices%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dportal-4%26scope%3Dopenid%26redirect_uri%3Dhttps%253A%252F%252Fssl.sp.mbga.jp%252F_connect_login_callback%26state%3D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%26display%3Dtouch%26prompt%3Dconsent">
+      
+        <div class="btn-line w-max btn-normal-inner btn-normal-txt">
+          <img class="m-r-xs valign-ns" src="https://cdn-connect.mobage.jp/static/img/common/btn_line.png" height="22" alt="LINE">
+        </div>
+      
+      </a>
+      
+    </div>
+    
+
+    
+    <div class="m-t-m">
+      
+      
+      <a href="/federate/google?client_id=portal-4&amp;post_cancel_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Flogin%3Fdisplay%3Dtouch%26sig%3D8bf73aab5f7fb42983ec740d72a00314d486059c%26seed%3DSYaeHbRFFsGD%26iat%3D1680141664%26client_id%3Dportal-4%26post_login_redirect_uri%3Dhttps%253A%252F%252Fconnect.mobage.jp%252Fconnect%252F1.0%252Fservices%252Fauthorize%253Fresponse_type%253Dcode%2526client_id%253Dportal-4%2526scope%253Dopenid%2526redirect_uri%253Dhttps%25253A%25252F%25252Fssl.sp.mbga.jp%25252F_connect_login_callback%2526state%253D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%2526display%253Dtouch%2526prompt%253Dconsent&amp;csrf_token=eyJhbGciOiJIUzI1NiJ9.eyJfZXh0Ijp7InAiOnsicG9zdF9mZWRlcmF0ZV9yZWRpcmVjdF91cmkiOiJodHRwczovL2Nvbm5lY3QubW9iYWdlLmpwL2Nvbm5lY3QvMS4wL3NlcnZpY2VzL2F1dGhvcml6ZT9yZXNwb25zZV90eXBlPWNvZGUmY2xpZW50X2lkPXBvcnRhbC00JnNjb3BlPW9wZW5pZCZyZWRpcmVjdF91cmk9aHR0cHMlM0ElMkYlMkZzc2wuc3AubWJnYS5qcCUyRl9jb25uZWN0X2xvZ2luX2NhbGxiYWNrJnN0YXRlPTMwMDk4Mjk3NDIuZU1HbVVXN1lXekVmZWJpcUtPcUZTRkF1LjE2ODAxNDE2NjQmZGlzcGxheT10b3VjaCZwcm9tcHQ9Y29uc2VudCIsInBvc3RfY2FuY2VsX3JlZGlyZWN0X3VyaSI6Imh0dHBzOi8vY29ubmVjdC5tb2JhZ2UuanAvbG9naW4_ZGlzcGxheT10b3VjaCZzaWc9OGJmNzNhYWI1ZjdmYjQyOTgzZWM3NDBkNzJhMDAzMTRkNDg2MDU5YyZzZWVkPVNZYWVIYlJGRnNHRCZpYXQ9MTY4MDE0MTY2NCZjbGllbnRfaWQ9cG9ydGFsLTQmcG9zdF9sb2dpbl9yZWRpcmVjdF91cmk9aHR0cHMlM0ElMkYlMkZjb25uZWN0Lm1vYmFnZS5qcCUyRmNvbm5lY3QlMkYxLjAlMkZzZXJ2aWNlcyUyRmF1dGhvcml6ZSUzRnJlc3BvbnNlX3R5cGUlM0Rjb2RlJTI2Y2xpZW50X2lkJTNEcG9ydGFsLTQlMjZzY29wZSUzRG9wZW5pZCUyNnJlZGlyZWN0X3VyaSUzRGh0dHBzJTI1M0ElMjUyRiUyNTJGc3NsLnNwLm1iZ2EuanAlMjUyRl9jb25uZWN0X2xvZ2luX2NhbGxiYWNrJTI2c3RhdGUlM0QzMDA5ODI5NzQyLmVNR21VVzdZV3pFZmViaXFLT3FGU0ZBdS4xNjgwMTQxNjY0JTI2ZGlzcGxheSUzRHRvdWNoJTI2cHJvbXB0JTNEY29uc2VudCJ9LCJhIjoibG9naW5fZm9ybSJ9LCJzdWIiOiIwIiwiaXNzIjoiaHR0cHM6Ly9jb25uZWN0Lm1vYmFnZS5qcCIsInR5cCI6ImNzcmZfdG9rZW4iLCJub25jZSI6ImU5ODcyNzkwYzk4NWVjOGUwY2NlYmQzNWQ4NjE0NWVlOTE1MjRmZDAiLCJpYXQiOjE2ODAxNDE2NjR9.dRsWVLsGXHFJewSfNLyTmtlaItHqCv35ceodjWOVjOs&amp;post_federate_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Fconnect%2F1.0%2Fservices%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dportal-4%26scope%3Dopenid%26redirect_uri%3Dhttps%253A%252F%252Fssl.sp.mbga.jp%252F_connect_login_callback%26state%3D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%26display%3Dtouch%26prompt%3Dconsent">
+      
+        <div class="btn-google w-max btn-normal-inner btn-normal-txt">
+          <img class="m-r-xs valign-ns" src="https://cdn-connect.mobage.jp/static/img/common/btn_google_2.png" height="24" alt="Google">
+        </div>
+      
+      </a>
+      
+    </div>
+    
+
+    
+    <div class="m-t-m">
+      
+      
+      <a href="/federate/facebook?client_id=portal-4&amp;post_cancel_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Flogin%3Fdisplay%3Dtouch%26sig%3D8bf73aab5f7fb42983ec740d72a00314d486059c%26seed%3DSYaeHbRFFsGD%26iat%3D1680141664%26client_id%3Dportal-4%26post_login_redirect_uri%3Dhttps%253A%252F%252Fconnect.mobage.jp%252Fconnect%252F1.0%252Fservices%252Fauthorize%253Fresponse_type%253Dcode%2526client_id%253Dportal-4%2526scope%253Dopenid%2526redirect_uri%253Dhttps%25253A%25252F%25252Fssl.sp.mbga.jp%25252F_connect_login_callback%2526state%253D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%2526display%253Dtouch%2526prompt%253Dconsent&amp;csrf_token=eyJhbGciOiJIUzI1NiJ9.eyJfZXh0Ijp7InAiOnsicG9zdF9mZWRlcmF0ZV9yZWRpcmVjdF91cmkiOiJodHRwczovL2Nvbm5lY3QubW9iYWdlLmpwL2Nvbm5lY3QvMS4wL3NlcnZpY2VzL2F1dGhvcml6ZT9yZXNwb25zZV90eXBlPWNvZGUmY2xpZW50X2lkPXBvcnRhbC00JnNjb3BlPW9wZW5pZCZyZWRpcmVjdF91cmk9aHR0cHMlM0ElMkYlMkZzc2wuc3AubWJnYS5qcCUyRl9jb25uZWN0X2xvZ2luX2NhbGxiYWNrJnN0YXRlPTMwMDk4Mjk3NDIuZU1HbVVXN1lXekVmZWJpcUtPcUZTRkF1LjE2ODAxNDE2NjQmZGlzcGxheT10b3VjaCZwcm9tcHQ9Y29uc2VudCIsInBvc3RfY2FuY2VsX3JlZGlyZWN0X3VyaSI6Imh0dHBzOi8vY29ubmVjdC5tb2JhZ2UuanAvbG9naW4_ZGlzcGxheT10b3VjaCZzaWc9OGJmNzNhYWI1ZjdmYjQyOTgzZWM3NDBkNzJhMDAzMTRkNDg2MDU5YyZzZWVkPVNZYWVIYlJGRnNHRCZpYXQ9MTY4MDE0MTY2NCZjbGllbnRfaWQ9cG9ydGFsLTQmcG9zdF9sb2dpbl9yZWRpcmVjdF91cmk9aHR0cHMlM0ElMkYlMkZjb25uZWN0Lm1vYmFnZS5qcCUyRmNvbm5lY3QlMkYxLjAlMkZzZXJ2aWNlcyUyRmF1dGhvcml6ZSUzRnJlc3BvbnNlX3R5cGUlM0Rjb2RlJTI2Y2xpZW50X2lkJTNEcG9ydGFsLTQlMjZzY29wZSUzRG9wZW5pZCUyNnJlZGlyZWN0X3VyaSUzRGh0dHBzJTI1M0ElMjUyRiUyNTJGc3NsLnNwLm1iZ2EuanAlMjUyRl9jb25uZWN0X2xvZ2luX2NhbGxiYWNrJTI2c3RhdGUlM0QzMDA5ODI5NzQyLmVNR21VVzdZV3pFZmViaXFLT3FGU0ZBdS4xNjgwMTQxNjY0JTI2ZGlzcGxheSUzRHRvdWNoJTI2cHJvbXB0JTNEY29uc2VudCJ9LCJhIjoibG9naW5fZm9ybSJ9LCJzdWIiOiIwIiwiaXNzIjoiaHR0cHM6Ly9jb25uZWN0Lm1vYmFnZS5qcCIsInR5cCI6ImNzcmZfdG9rZW4iLCJub25jZSI6ImU5ODcyNzkwYzk4NWVjOGUwY2NlYmQzNWQ4NjE0NWVlOTE1MjRmZDAiLCJpYXQiOjE2ODAxNDE2NjR9.dRsWVLsGXHFJewSfNLyTmtlaItHqCv35ceodjWOVjOs&amp;post_federate_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Fconnect%2F1.0%2Fservices%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dportal-4%26scope%3Dopenid%26redirect_uri%3Dhttps%253A%252F%252Fssl.sp.mbga.jp%252F_connect_login_callback%26state%3D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%26display%3Dtouch%26prompt%3Dconsent">
+      
+        <div class="btn-facebook w-max btn-normal-inner btn-normal-txt">
+          <img class="m-r-xs valign-ns" src="https://cdn-connect.mobage.jp/static/img/common/btn_facebook.png" width="89" height="19" alt="Facebook">
+        </div>
+      
+      </a>
+      
+    </div>
+    
+
+    
+    <div class="m-t-m">
+      
+      
+      <a href="/federate/yahoo?client_id=portal-4&amp;post_cancel_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Flogin%3Fdisplay%3Dtouch%26sig%3D8bf73aab5f7fb42983ec740d72a00314d486059c%26seed%3DSYaeHbRFFsGD%26iat%3D1680141664%26client_id%3Dportal-4%26post_login_redirect_uri%3Dhttps%253A%252F%252Fconnect.mobage.jp%252Fconnect%252F1.0%252Fservices%252Fauthorize%253Fresponse_type%253Dcode%2526client_id%253Dportal-4%2526scope%253Dopenid%2526redirect_uri%253Dhttps%25253A%25252F%25252Fssl.sp.mbga.jp%25252F_connect_login_callback%2526state%253D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%2526display%253Dtouch%2526prompt%253Dconsent&amp;csrf_token=eyJhbGciOiJIUzI1NiJ9.eyJfZXh0Ijp7InAiOnsicG9zdF9mZWRlcmF0ZV9yZWRpcmVjdF91cmkiOiJodHRwczovL2Nvbm5lY3QubW9iYWdlLmpwL2Nvbm5lY3QvMS4wL3NlcnZpY2VzL2F1dGhvcml6ZT9yZXNwb25zZV90eXBlPWNvZGUmY2xpZW50X2lkPXBvcnRhbC00JnNjb3BlPW9wZW5pZCZyZWRpcmVjdF91cmk9aHR0cHMlM0ElMkYlMkZzc2wuc3AubWJnYS5qcCUyRl9jb25uZWN0X2xvZ2luX2NhbGxiYWNrJnN0YXRlPTMwMDk4Mjk3NDIuZU1HbVVXN1lXekVmZWJpcUtPcUZTRkF1LjE2ODAxNDE2NjQmZGlzcGxheT10b3VjaCZwcm9tcHQ9Y29uc2VudCIsInBvc3RfY2FuY2VsX3JlZGlyZWN0X3VyaSI6Imh0dHBzOi8vY29ubmVjdC5tb2JhZ2UuanAvbG9naW4_ZGlzcGxheT10b3VjaCZzaWc9OGJmNzNhYWI1ZjdmYjQyOTgzZWM3NDBkNzJhMDAzMTRkNDg2MDU5YyZzZWVkPVNZYWVIYlJGRnNHRCZpYXQ9MTY4MDE0MTY2NCZjbGllbnRfaWQ9cG9ydGFsLTQmcG9zdF9sb2dpbl9yZWRpcmVjdF91cmk9aHR0cHMlM0ElMkYlMkZjb25uZWN0Lm1vYmFnZS5qcCUyRmNvbm5lY3QlMkYxLjAlMkZzZXJ2aWNlcyUyRmF1dGhvcml6ZSUzRnJlc3BvbnNlX3R5cGUlM0Rjb2RlJTI2Y2xpZW50X2lkJTNEcG9ydGFsLTQlMjZzY29wZSUzRG9wZW5pZCUyNnJlZGlyZWN0X3VyaSUzRGh0dHBzJTI1M0ElMjUyRiUyNTJGc3NsLnNwLm1iZ2EuanAlMjUyRl9jb25uZWN0X2xvZ2luX2NhbGxiYWNrJTI2c3RhdGUlM0QzMDA5ODI5NzQyLmVNR21VVzdZV3pFZmViaXFLT3FGU0ZBdS4xNjgwMTQxNjY0JTI2ZGlzcGxheSUzRHRvdWNoJTI2cHJvbXB0JTNEY29uc2VudCJ9LCJhIjoibG9naW5fZm9ybSJ9LCJzdWIiOiIwIiwiaXNzIjoiaHR0cHM6Ly9jb25uZWN0Lm1vYmFnZS5qcCIsInR5cCI6ImNzcmZfdG9rZW4iLCJub25jZSI6ImU5ODcyNzkwYzk4NWVjOGUwY2NlYmQzNWQ4NjE0NWVlOTE1MjRmZDAiLCJpYXQiOjE2ODAxNDE2NjR9.dRsWVLsGXHFJewSfNLyTmtlaItHqCv35ceodjWOVjOs&amp;post_federate_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Fconnect%2F1.0%2Fservices%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dportal-4%26scope%3Dopenid%26redirect_uri%3Dhttps%253A%252F%252Fssl.sp.mbga.jp%252F_connect_login_callback%26state%3D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%26display%3Dtouch%26prompt%3Dconsent">
+      
+        <div class="btn-yahoo w-max btn-normal-inner btn-normal-txt">
+          <img class="m-r-xs valign-ns" src="https://cdn-connect.mobage.jp/static/img/common/btn_yahoo_japan.png" width="133" height="15" alt="Yahoo! JAPAN">
+        </div>
+      
+      </a>
+      
+    </div>
+    
+
+    <p class="txt-notes txt-s m-t-m ws-nowrap">※上記 SNS 等に勝手に投稿される事はありません</p>
+  </section>
+    
+
+            
+
+            
+            <div class="m-t-xl">
+              <a id="register" href="/register/new?client_origin_uri=&amp;height=&amp;post_register_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Fconnect%2F1.0%2Fservices%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dportal-4%26scope%3Dopenid%26redirect_uri%3Dhttps%253A%252F%252Fssl.sp.mbga.jp%252F_connect_login_callback%26state%3D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%26display%3Dtouch%26prompt%3Dconsent&amp;client_id=portal-4&amp;post_cancel_redirect_uri=https%3A%2F%2Fconnect.mobage.jp%2Flogin%3Fdisplay%3Dtouch%26sig%3D8bf73aab5f7fb42983ec740d72a00314d486059c%26seed%3DSYaeHbRFFsGD%26iat%3D1680141664%26client_id%3Dportal-4%26post_login_redirect_uri%3Dhttps%253A%252F%252Fconnect.mobage.jp%252Fconnect%252F1.0%252Fservices%252Fauthorize%253Fresponse_type%253Dcode%2526client_id%253Dportal-4%2526scope%253Dopenid%2526redirect_uri%253Dhttps%25253A%25252F%25252Fssl.sp.mbga.jp%25252F_connect_login_callback%2526state%253D3009829742.eMGmUW7YWzEfebiqKOqFSFAu.1680141664%2526display%253Dtouch%2526prompt%253Dconsent&amp;display=touch&amp;enable_federation=1&amp;sdk_version=&amp;theme=&amp;sdk_name=&amp;width=" class="btn-normal w-max">
+                <div class="btn-normal-inner btn-normal-txt">
+                  はじめてご利用の方
+                </div>
+              </a>
+            </div>
+            
+        </div>
+        <!-- /landscapeColumnLayout_right -->
+      
+    </div>
+    <!-- /landscapeColumnLayout -->
+
+    <div class="m-t-grid">
+      <ul class="list-bd align-c">
+        <li class="list-bd-item">
+        
+          <a href="http://sp.mbga.jp/_cs_faq_top" class="list-bd-item-link txt-notes txt-s" target="_blank">ヘルプ / お問い合わせ</a>
+        
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /contents-body -->
+  <noscript>
+    <iframe src="//b.yjtag.jp/iframe?c=wOZbjM3" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  </noscript>
+
+</div>
+</body>
+</html>
