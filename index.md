@@ -17,8 +17,12 @@
 * [篠原礼](idols/篠原礼)
 
 ## ぷちデレラ
-* [榊原里美海老原菜帆/相原雪乃](etc/puchi/puchi)
-* [十時愛梨/三村かな子/槙原志保](etc/puchi/puchi2)
-* [柳清良/月宮雅/井村雪菜](etc/puchi/puchi3)
-* [瀬名詩織/岸部彩華/西川保奈美](etc/puchi/puchi4)
-* [及川雫/沢田麻理菜/篠原礼](etc/puchi/puchi5)
+* [榊原里美 / 海老原菜帆 / 相原雪乃](etc/puchi/puchi)
+
+* [十時愛梨 / 三村かな子 / 槙原志保](etc/puchi/puchi2)
+
+* [柳清良 / 月宮雅 / 井村雪菜](etc/puchi/puchi3)
+
+* [瀬名詩織 / 岸部彩華 / 西川保奈美](etc/puchi/puchi4)
+
+* [及川雫 / 沢田麻理菜 / 篠原礼](etc/puchi/puchi5)
